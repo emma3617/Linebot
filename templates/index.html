@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書籍推薦 Bot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>書籍推薦 Bot</h1>
+    <form action="/books" method="post">
+        <label for="title">書名:</label>
+        <input type="text" id="title" name="title" required><br><br>
+        <label for="author">作者:</label>
+        <input type="text" id="author" name="author" required><br><br>
+        <label for="genre">類型:</label>
+        <input type="text" id="genre" name="genre"><br><br>
+        <label for="description">描述:</label>
+        <textarea id="description" name="description"></textarea><br><br>
+        <button type="submit">添加書籍</button>
+    </form>
+</body>
+</html>
